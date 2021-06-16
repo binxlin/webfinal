@@ -1,17 +1,16 @@
+
 .todo {
   align-self: center;
   color: white;
 }
-
 .todo .crossText {
   text-decoration: line-through;
   color: red;
 }
-
 .todo input {
   background: transparent;
   border: none;
-  color: whitesmoke;
+  color: black;
   border-bottom: 5px dashed rgb(43, 228, 114);
   min-width: 400px;
   margin-top: 40px;
@@ -20,7 +19,7 @@
 }
 
 .todo input::placeholder {
-  color: whitesmoke;
+  color: black;
   font-size: 1.2rem;
 }
 
@@ -88,4 +87,3 @@
   border-radius: 20px;
   font-size: 0.9rem;
 }
-

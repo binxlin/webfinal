@@ -5,11 +5,14 @@ import Album from './Album';
 import Signin  from './Signin';
 import SongApp from './Song/SongApp';
 import Profile from './Profile';
-
-
-import { BrowserRouter as Router, Switch , Route} from 'react-router-dom';
-
+import ReactGA from 'react-ga'
+import { BrowserRouter as Router, Switch , Route } from 'react-router-dom';
+function initizeAnalytics(){
+    ReactGA.initialize('G-WWC9689KRN')
+    ReactGA.pageview('/')
+}
 function  Match() {
+    initizeAnalytics();
     return (
         <Router>
         <div className = "Match">

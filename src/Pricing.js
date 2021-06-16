@@ -10,11 +10,11 @@ import Grid from '@material-ui/core/Grid';
 import StarIcon from '@material-ui/icons/StarBorder';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import { Link } from 'react-router-dom';
+import './Css/Pricing.css';
 
 function Copyright() {
   return (
@@ -116,20 +116,20 @@ export default function Pricing() {
       <CssBaseline />
       <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
-          <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+          <Typography  variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
             首頁
           </Typography>
-          <Link to = "/album">
+          <Link  class = "context" to = "/album">
             歌手
           </Link>
           <nav>
-            <Link to ="/song">
+            <Link class = "context" to ="/song">
               我的歌單
             </Link>
-            <Link to = "/profile">
+            <Link class = "context" to = "/profile">
               個人頁
             </Link>
-            <Link to = "/">
+            <Link class = "context" to = "/">
             登出
             </Link>
           </nav>
@@ -137,9 +137,9 @@ export default function Pricing() {
         </Toolbar>
       </AppBar>
       {/* Hero unit */}
-      <Container maxWidth="sm" component="main" className={classes.heroContent}>
-        <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-          Spotify
+      <Container maxWidth="sm" component="main" className={classes.heroContent} class = "context" >
+        <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom >
+          Superfly
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" component="p">
           歡迎來到我們的音樂網頁
@@ -151,7 +151,7 @@ export default function Pricing() {
           {tiers.map((tier) => (
             // Enterprise card is full width at sm breakpoint
             <Grid item key={tier.title} xs={12} sm={tier.title === 'Enterprise' ? 12 : 6} md={4}>
-              <Card>
+              <Card class = "top">
                 <CardHeader
                   title={tier.title}
                   subheader={tier.subheader}
@@ -161,8 +161,8 @@ export default function Pricing() {
                   className={classes.cardHeader}
                 />
                 <CardContent>
-                  <div className={classes.cardPricing}>
-                    <Typography component="h2" variant="h3" color="textPrimary">
+                  <div className={classes.cardPricing} class ="card">
+                    <Typography component="h2" variant="h3" color="textPrimary" align ="center">
                       ${tier.price}
                     </Typography>
                     <Typography variant="h6" color="textSecondary">

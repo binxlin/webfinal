@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Link } from 'react-router-dom'; 
+import './Css/Album.css';
 
 function Copyright() {
   return (
@@ -68,12 +69,12 @@ export default function Album() {
     <React.Fragment>
       <CssBaseline />
       <AppBar position="relative">
-        <Toolbar>
+        <Toolbar >
           {/*<CameraIcon className={classes.icon} />*/}
           <Typography variant="h6" color="inherit" noWrap>
             歌手頁面
           </Typography>
-          <Link to = "/pricing">
+          <Link to = "/pricing" class = "context1">
               首頁
           </Link>
         </Toolbar>
@@ -81,11 +82,11 @@ export default function Album() {
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
-          <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+          <Container maxWidth="sm" >
+            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom class = "context2">
               歌手
             </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+            <Typography variant="h5" align="center" color="textSecondary" paragraph class = "context3">
               這裡有很多很知名的歌手請細細品嘗
             </Typography>
             <div className={classes.heroButtons}>
@@ -115,11 +116,11 @@ export default function Album() {
                     src = ""
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h6" component="h2">
+                  <CardContent className={classes.cardContent} >
+                    <Typography gutterBottom variant="h6" component="h2" class = "context3">
                       羅志祥空幹王
                     </Typography>
-                    <Typography>
+                    <Typography >
                       精武門
                     </Typography>
                   </CardContent>
@@ -141,10 +142,10 @@ export default function Album() {
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h6" component="h2">
+                    <Typography gutterBottom variant="h6" component="h2" class = "context3">
                       高爾軒OSN
                     </Typography>
-                    <Typography>
+                    <Typography class = "context3">
                       without you,why you gonna lie
                     </Typography>
                   </CardContent>

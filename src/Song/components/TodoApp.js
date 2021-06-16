@@ -35,7 +35,7 @@ function TodoApp(props) {
         onChange={(e) => handleChange(e)}
         placeholder="輸入欲新增歌曲"
       />
-      <button className="add-btn" onClick={AddTask}>
+      <button class="add-btn" onClick={AddTask}>
         新增歌曲
       </button>
       
