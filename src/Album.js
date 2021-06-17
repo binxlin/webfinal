@@ -116,7 +116,7 @@ export default function Album() {
                     src = ""
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent} >
+                  <CardContent className={classes.cardContent} class = "card1">
                     <Typography gutterBottom variant="h6" component="h2" class = "context3">
                       羅志祥空幹王
                     </Typography>

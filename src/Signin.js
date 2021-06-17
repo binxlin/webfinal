@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import auth from './Song/components/Auth';
-import './Css/Signin.css';
+
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -39,10 +39,10 @@ export default function SignIn(props) {
       <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className={classes.paper}>
-        <Typography  component="h2"  variant="h3" >
+        <Typography component="h2"  variant="h3" >
           Superfly sign in
         </Typography>
-        <form className={classes.form}  noValidate>
+        <form className={classes.form} noValidate>
           <TextField
             variant="outlined"
             margin="normal"

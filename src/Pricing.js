@@ -139,7 +139,7 @@ export default function Pricing() {
       {/* Hero unit */}
       <Container maxWidth="sm" component="main" className={classes.heroContent} class = "context" >
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom >
-          Superfly
+          Spotify
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" component="p">
           歡迎來到我們的音樂網頁

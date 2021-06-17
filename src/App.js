@@ -5,16 +5,13 @@ import Album from './Album';
 import Signin  from './Signin';
 import SongApp from './Song/SongApp';
 import Profile from './Profile';
-import ReactGA from 'react-ga'
-import { BrowserRouter as Router, Switch , Route } from 'react-router-dom';
-function initizeAnalytics(){
-    ReactGA.initialize('G-WWC9689KRN')
-    ReactGA.pageview('/')
-}
+import { BrowserRouter as Router, Switch , Route} from 'react-router-dom';
+import Analytics from 'react-router-ga';
+
 function  Match() {
-    initizeAnalytics();
     return (
         <Router>
+            <Analytics id="UA-199744399-1">
         <div className = "Match">
             {/*<Link to = "/album">歌手</Link>*/}
             <Switch>
@@ -23,9 +20,9 @@ function  Match() {
                 <Route path = "/song" component = {SongApp}/>
                 <Route path = "/pricing" component = {Pricing}/>
                 <Route path ="/profile" component={Profile}/>
-            </Switch>
-
+            </Switch> 
         </div>
+        </Analytics>
         </Router>
     );
 }
